@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing test</title>
+    <style>
+        
+#container{
+  color: white;
+  width: 100%;
+  margin: 8.5%;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  text-align:center;
+}
+.container{
+  background-color: black;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  
+  color: blue;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="container"></div>
+          </div>
+          <script>
+              var text = "Spread Right Information!!! A little knowledge is a dangerous thing...";
+
+var chars = text.split('');
+var container = document.getElementById("container");
+
+var i = 0;
+setInterval(function () {
+    if (i < chars.length) {
+        container.innerHTML += chars[i++];
+    } else {
+        i = 0;
+        container.innerHTML = "";
+    }
+}, 100);
+          </script>
+</body>
+</html>
