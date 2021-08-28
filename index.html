@@ -5,28 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width= 100%, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="file.css"/>
-    <script src="script.js"></script>
-  
+    <link rel="stylesheet" href="file.css" />
+    <style>
+       
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      
+      #myBtn:hover {
+        background-color: #555;
+      }
+      </style>
   </head>
   <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div id="img">
-            <img src="my.jpeg" alt="avatar"style="width:200px; border-radius: 50%;"/>
-          </div>
-          <div class="container">
-            <div id="container"></div>
-              </div>
+      <img
+        src="my.jpeg"
+        alt="avatar"
+        style="width: 200px; border-radius: 50%"
+      />
+    </div>
+
+    <div id="container"></div>
+
     <div class="topnav">
       <a class="active" href="index.html">Home</a>
       <a href="ht.html">HTML</a>
       <a href="cs.html">CSS</a>
       <a href="js.html">JAVASCRIPT</a>
     </div>
-    
+    <section>
+      <h2>HTML</h2>
+      <p style="text-align: justify; color: white; background-color: black">
+        HTML stands for Hyper Text Markup Language. It is the standard markup
+        language for creating Web pages. It describes the structure of a Web
+        page. It consists of a series of elements. It elements tell the browser
+        how to display the content. It elements label pieces of content such as
+        "this is a heading", "this is a paragraph", "this is a link", etc..
+      </p>
+      <img src="exhtml.png">
+    </section>
+
+  
+      <h2>CSS</h2>
+      <p style="text-align: justify; color:black; background-color: rgb(163, 163, 228)">
+        CSS stands for Cascading Style Sheets. It describes how HTML elements
+        are to be displayed on screen, paper, or in other media. It saves a lot
+        of work. It can control the layout of multiple web pages all at once.
+        External stylesheets are stored in CSS files.
+      </p>
+      <img src="excss.png">
+    </section>
+    <section>
+      <h2>JAVASCRIPT</h2>
+      <p style="text-align: justify; color: black; background-color: rgb(223, 223, 179)">
+        JavaScript is the world's most popular programming language.It is the
+        programming language of the Web.
+      </p>
+      <img src="exjava.png">
+    </section>
     <div id="footer">
       <p>Thank you for visiting this site</p>
-      
     </div>
+    <script src="myscript.js"></script>
   </body>
 </html>
